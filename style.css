@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* global variables */
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --acccent-color-dark: #1d69a3;
+    --padding-inline-section:20px
+}
+body{
+    font-family: 'poppins',sans-serif;
+    color: var(--primary-text-color);
+
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+
+}
+p{
+    font-family: 'roboto',sans-serif;
+    font-size: 1.25rem;
+    color:var(--secondary-text-color) ;
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+/* utility classes */
+.hover-links{
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+.hover-links:hover{
+    color: var(--accent-color);
+}
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color:white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+    text-align: center;
+}
+.primary-button:hover{
+    background-color: var(--acccent-color-dark);
+
+}
+.secondary-button{
+    border: 1.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 800;
+    color: var(--primary-text-color);
+    box-shadow: 0 0 2px var(--secondary-text-color); 
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color: var(--acccent-color-dark) !important;
+
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+
+}
+ 
+/* top banner */
+.top-banner{
+    background-image: url(/img/elec2.jpg);
+    background-size: 300px;
+
+}
+.banner-text{
+    color:  rgb(32, 23, 23);
+    padding: 15px 30px;
+    text-align: center;
+    font-family: cursive;
+    text-shadow: 1px 1px gray;
+
+}
+
+/* nav bar */
+
+.main-nav{
+    justify-content: space-between;
+    margin-top: 8px;
+    position: relative;
+}
+
+.company-logo img{
+    width: 80px;
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+    font-weight: 500;
+}
+/* taki right se shuru ho or jo gap hai wo 40 pc ka ek dusre ke bich me */
+
+.nav-links{
+    flex-basis: 730px;
+}
+.nav-toggle{
+    display:none;
+}
+/* so that the width of the nav links will 730 */
+
+
+/* header section */
+
+header{
+    padding: 50px;
+    gap: 50px;
+}
+.header-left{
+    max-width: 40vw;
+}
+
+.header-left h1{
+    margin-top: 20px;
+    margin-left: 40px;
+
+}
+.header-left h3{
+    margin-top: 30px;
+    margin-left: 20px;
+    color: darkorange;
+    font-family: cursive;
+}
+.header-left p{
+    margin-top: 30px;
+    margin-left: 20px;
+    color: #183b56;
+    font-weight: 600;
+    font-family: monospace;
+}
+.get-started-button{
+    margin-top: 40px;
+    margin-left:200px ;
+}
+
+.header-right img{
+
+    width: 100%;
+    margin-left: 100px;
+}
+
+/* companies logo  */
+
+.trust-line{
+    font-family: cursive !important;
+    font-size: x-large;
+    font-weight: 800;
+    margin-block: 30px;
+    color: darkgreen;
+    text-shadow: 1px 1px pink;
+    text-align: center;
+}
+.logos{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.logo{
+    height: 90px;
+    
+}
+
+/* features section */ 
+.features-section{
+    padding: 80px var(--padding-inline-section) 0;
+    background-image: url(/img/blbg.avif);
+}
+
+.features-header{
+    text-align: center;
+}
+
+.features-header h3{
+    color: var(--primary-text-color);
+}
+.features-header a{
+    margin-top: 20px;
+}
+.features-area{
+    margin-top: 70px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+.features-card{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+.logof{
+    height: 50px;
+}
+
+/* big features section */
+
+
+.big-features-section{
+    padding: 60px 40px 0;
+}
+.big-feature-container{
+    gap: 30px;
+
+}
+.big-feature-container img{
+    width: 400px ;
+    border-radius: 50px;
+}
+#special-bf{
+    flex-direction: row-reverse;
+}
+.bf-text{
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.bf-text p{
+    margin-top: 10px;
+    
+}
+
+/* cta */
+
+.cta-section-cont{
+    flex-direction: column;
+    gap: 30px;
+    color: black;
+   
+}
+
+/* footer */
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-container{
+    font-weight: 500;
+    padding: 40px 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+   
+}
+.subfooter{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+}
+
+.sub-footer-container{
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
